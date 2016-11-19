@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{379AA55D-7720-4960-8ADE-5AF38F4F9772}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>projector</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\obj\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\obj\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\rtsp;$(SolutionDir)common\utility\include;$(SolutionDir)common\media;$(SolutionDir)Rdp\src\channels\rdpgfx\client;$(SolutionDir)Rdp\src\include;$(SolutionDir)\Rdp\src;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)Rdp\src\client\Windows;$(SolutionDir)Rdp\src\channels\drdynvc\client;$(SolutionDir)Rdp\src;$(SolutionDir)\Rdp\src\channels\client;$(SolutionDir)Rdp\src\channels\rdpdr\client;$(SolutionDir)Rdp\src\channels\rdpsnd\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;Ntdsapi.lib;Credui.lib;Rpcrt4.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)OpenSSL\lib</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)common\rtsp;$(SolutionDir)common\utility\include;$(SolutionDir)common\media;$(SolutionDir)Rdp\src\channels\rdpgfx\client;$(SolutionDir)Rdp\src\include;$(SolutionDir)\Rdp\src;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)Rdp\src\client\Windows;$(SolutionDir)Rdp\src\channels\drdynvc\client;$(SolutionDir)Rdp\src;$(SolutionDir)\Rdp\src\channels\client;$(SolutionDir)Rdp\src\channels\rdpdr\client;$(SolutionDir)Rdp\src\channels\rdpsnd\client;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)OpenSSL\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libeay32.lib;ssleay32.lib;Ntdsapi.lib;Credui.lib;Rpcrt4.lib;Winmm.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /e /s /y "$(SolutionDir)OpenSSL\libeay32.dll" "$(OutDir)"
+xcopy /e /s /y "$(SolutionDir)OpenSSL\ssleay32.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Rdp\src\client\common\tables.c" />
+    <ClCompile Include="AudioPlayback.cpp" />
+    <ClCompile Include="AudioSource.cpp" />
+    <ClCompile Include="DeviceRedirecr.cpp" />
+    <ClCompile Include="IRdpSource.cpp" />
+    <ClCompile Include="RdpDRSource.h.cpp" />
+    <ClCompile Include="RedirectPipe.cpp" />
+    <ClCompile Include="HIDRedirector.cpp" />
+    <ClCompile Include="IRedirector.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RedirectChannelFactory.cpp" />
+    <ClCompile Include="TcpChannel.cpp" />
+    <ClCompile Include="RDPProjectorPipeline.cpp" />
+    <ClCompile Include="TouchAndPen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rdp\proj\drdynvc-client.vcxproj">
+      <Project>{7e4b37ad-3e90-3700-ac0c-52c967db8e85}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rdp\proj\freerdp-client.vcxproj">
+      <Project>{a995c739-0852-361a-a3b7-5d1eff3be873}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rdp\proj\freerdp.vcxproj">
+      <Project>{e9bcda2c-c202-320e-ae03-fc9bb318c2ee}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rdp\proj\rdpgfx-client.vcxproj">
+      <Project>{061a0e64-a803-3743-827b-bee2330f814e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rdp\proj\rdpsnd-client-winmm.vcxproj">
+      <Project>{f474a9c8-66b6-372d-bd22-9605d37d3e22}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rdp\proj\rdpsnd-client.vcxproj">
+      <Project>{e5fe090a-0f69-3776-8411-694649789445}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rdp\proj\wfreerdp-client.vcxproj">
+      <Project>{efa0014a-39ca-3b93-a364-c5b5bee7219c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Rdp\proj\winpr.vcxproj">
+      <Project>{21fad66e-4d24-3a0b-baec-07ec3dd7c166}</Project>
+    </ProjectReference>
+    <ClCompile Include="D2DRender.cpp" />
+    <ClCompile Include="RdpStreamingParser.cpp" />
+    <ClCompile Include="RdpScreenSource.cpp" />
+    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SessionManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\common\media\media.vcxproj">
+      <Project>{4256b65f-03a6-45ba-bec8-2a3d66d503db}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\common\rtsp\rtsp.vcxproj">
+      <Project>{e03f4ad1-aadb-4ffa-9bb6-298f4dfaa471}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\common\utility\Utility.vcxproj">
+      <Project>{1428e9eb-8858-41d8-a8b1-aa4d8e1d9f91}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Rdp\src\channels\client\tables.h" />
+    <ClInclude Include="AudioPlayback.h" />
+    <ClInclude Include="AudioSource.h" />
+    <ClInclude Include="D2DRender.h" />
+    <ClInclude Include="DeviceRedirecr.h" />
+    <ClInclude Include="IRdpSource.h" />
+    <ClInclude Include="RdpDRSource.h" />
+    <ClInclude Include="RedirectPipe.h" />
+    <ClInclude Include="HIDRedirector.h" />
+    <ClInclude Include="IChannel.h" />
+    <ClInclude Include="IRedirector.h" />
+    <ClInclude Include="RdpStreamingDef.h" />
+    <ClInclude Include="RdpStreamingParser.h" />
+    <ClInclude Include="RdpScreenSource.h" />
+    <ClInclude Include="RedirectChannelFactory.h" />
+    <ClInclude Include="Session.h" />
+    <ClInclude Include="SessionManager.h" />
+    <ClInclude Include="TcpChannel.h" />
+    <ClInclude Include="RDPProjectorPipeline.h" />
+    <ClInclude Include="TouchAndPen.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Projector">
+      <UniqueIdentifier>{d51b338a-37c8-454f-8515-41e53c5550df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rdp">
+      <UniqueIdentifier>{ec8a62dc-1848-4b40-be3f-f3f86b1c2652}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{9d2b7618-bb2a-440e-9094-d929bda2248a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IAgent.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Redirector.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="RdpSetting.h">
+      <Filter>Rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="RdpAgent.h">
+      <Filter>Rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectorSetting.h">
+      <Filter>Projector</Filter>
+    </ClInclude>
+    <ClInclude Include="ProjectorAgent.h">
+      <Filter>Projector</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeRdp.h">
+      <Filter>Rdp</Filter>
+    </ClInclude>
+    <ClInclude Include="HIDSocketReader.h">
+      <Filter>Projector</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchAndPenMsgReader.h">
+      <Filter>Projector</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseTouchPenMsg.h">
+      <Filter>Projector</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSocketReader.h">
+      <Filter>Projector</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="IAgent.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Redirector.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="RdpSetting.cpp">
+      <Filter>Rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="RdpAgent.cpp">
+      <Filter>Rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectorAgent.cpp">
+      <Filter>Projector</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectorSetting.cpp">
+      <Filter>Projector</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeRdp.cpp">
+      <Filter>Rdp</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Rdp\src\client\common\Redirecttables.c" />
+    <ClCompile Include="HIDSocketReader.cpp">
+      <Filter>Projector</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchAndPenMsgReader.cpp">
+      <Filter>Projector</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioSocketReader.cpp">
+      <Filter>Projector</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

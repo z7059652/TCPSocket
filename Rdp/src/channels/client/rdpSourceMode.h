@@ -1,0 +1,7 @@
+typedef enum
+{
+	_RDP_PROJECTOR,
+	_RDP_REDIRECTOR,
+	_RDP_ORIGINAL
+}_RDP_OPTION_TABLE;
+extern _RDP_OPTION_TABLE UsingMode;

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="private\common\error_handling_utility.cpp" />
+    <ClCompile Include="private\common\guid.cpp" />
+    <ClCompile Include="private\common\ImageProcess.cpp" />
+    <ClCompile Include="private\common\MemReader.cpp" />
+    <ClCompile Include="private\common\MemWriter.cpp" />
+    <ClCompile Include="private\common\ensure_utility.cpp" />
+    <ClCompile Include="private\common\exception.cpp" />
+    <ClCompile Include="private\common\AutoReader.cpp" />
+    <ClCompile Include="private\common\imagebuffer.cpp" />
+    <ClCompile Include="private\common\TcpListener.cpp" />
+    <ClCompile Include="private\windows\MouseLLHook.cpp" />
+    <ClCompile Include="private\windows\network_change.cpp" />
+    <ClCompile Include="private\windows\network_utility.cpp" />
+    <ClCompile Include="private\common\thread.cpp" />
+    <ClCompile Include="private\common\timebased_worker.cpp" />
+    <ClCompile Include="private\common\wait_timer.cpp" />
+    <ClCompile Include="private\windows\trace_console.cpp" />
+    <ClCompile Include="private\windows\monitor.cpp" />
+    <ClCompile Include="private\common\ReadableSource.cpp" />
+    <ClCompile Include="private\common\AsyncBase.cpp" />
+    <ClCompile Include="private\common\AsyncSocketWriter.cpp" />
+    <ClCompile Include="private\common\AutoSocketReader.cpp" />
+    <ClCompile Include="private\common\Logger.cpp" />
+    <ClCompile Include="private\windows\Dump.cpp" />
+    <ClCompile Include="private\common\AsyncWriter.cpp" />
+    <ClCompile Include="private\common\system_clock.cpp" />
+    <ClCompile Include="private\common\Socket.cpp" />
+    <ClCompile Include="private\common\SocketTcp.cpp" />
+    <ClCompile Include="private\common\SocketTcpServer.cpp" />
+    <ClCompile Include="private\common\SocketUdp.cpp" />
+    <ClCompile Include="private\common\wstr2str.cpp" />
+    <ClCompile Include="private\windows\UacDesktopGuard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\any.h" />
+    <ClInclude Include="include\AsyncBase.h" />
+    <ClInclude Include="include\AsyncSocketWriter.h" />
+    <ClInclude Include="include\AsyncWriter.h" />
+    <ClInclude Include="include\audiodefs.h" />
+    <ClInclude Include="include\AutoReader.h" />
+    <ClInclude Include="include\AutoSocketReader.h" />
+    <ClInclude Include="include\buffer.h" />
+    <ClInclude Include="include\ComSmartPtr.h" />
+    <ClInclude Include="include\cursordefs.h" />
+    <ClInclude Include="include\DataBuffer.h" />
+    <ClInclude Include="include\Dump.h" />
+    <ClInclude Include="include\ensure_utility.h" />
+    <ClInclude Include="include\error_handling_utility.h" />
+    <ClInclude Include="include\exception.h" />
+    <ClInclude Include="include\guid.h" />
+    <ClInclude Include="include\hiddefs.h" />
+    <ClInclude Include="include\imagebuffer.h" />
+    <ClInclude Include="include\imagedefs.h" />
+    <ClInclude Include="include\ImageProcess.h" />
+    <ClInclude Include="include\interface.h" />
+    <ClInclude Include="include\Logger.h" />
+    <ClInclude Include="include\MemReader.h" />
+    <ClInclude Include="include\MemWriter.h" />
+    <ClInclude Include="include\monitor.h" />
+    <ClInclude Include="include\MouseLLHook.h" />
+    <ClInclude Include="include\networkdefs.h" />
+    <ClInclude Include="include\network_change.h" />
+    <ClInclude Include="include\network_utility.h" />
+    <ClInclude Include="include\noncopyable.h" />
+    <ClInclude Include="include\ReadableSource.h" />
+    <ClInclude Include="include\rectdefs.h" />
+    <ClInclude Include="include\Resolution.h" />
+    <ClInclude Include="include\ScopeGuard.h" />
+    <ClInclude Include="include\SignalConnection.h" />
+    <ClInclude Include="include\SmartHandle.h" />
+    <ClInclude Include="include\Socket.h" />
+    <ClInclude Include="include\SocketTcp.h" />
+    <ClInclude Include="include\SocketTcpServer.h" />
+    <ClInclude Include="include\SocketUdp.h" />
+    <ClInclude Include="include\string_utility.h" />
+    <ClInclude Include="include\system_clock.h" />
+    <ClInclude Include="include\target_os.h" />
+    <ClInclude Include="include\TcpListener.h" />
+    <ClInclude Include="include\thread.h" />
+    <ClInclude Include="include\timebased_worker.h" />
+    <ClInclude Include="include\trace_console.h" />
+    <ClInclude Include="include\Trimmean.h" />
+    <ClInclude Include="include\UacDesktopGuard.h" />
+    <ClInclude Include="include\waitable_event.h" />
+    <ClInclude Include="include\WaitingBuffer.h" />
+    <ClInclude Include="include\WaitingPipe.h" />
+    <ClInclude Include="include\WaitingQueue.h" />
+    <ClInclude Include="include\wait_timer.h" />
+    <ClInclude Include="include\WritableSource.h" />
+    <ClInclude Include="include\wstr2str.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Utility</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\obj\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\Output\obj\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

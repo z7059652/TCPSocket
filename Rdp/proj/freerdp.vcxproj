@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>freerdp</ProjectName>
+    <SccProjectName>$/TiRA/developers/mingyug/TiRARDP/Rdp/proj</SccProjectName>
+    <SccAuxPath>http://vstfsng01:8080/tfs/research</SccAuxPath>
+    <SccLocalPath>.</SccLocalPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Output\obj\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">freerdp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Output\obj\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">freerdp</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp\src;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINVER=0x0501;WIN32_WINNT=0x0501;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;WITH_OPENSSL;HAVE_CONFIG_H;EXT_PATH="C:/Program Files (x86)/FreeRDP/lib/freerdp/extensions";CMAKE_BUILD_TYPE=Release;CMAKE_INTDIR="Debug";freerdp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINVER=0x0501;WIN32_WINNT=0x0501;WINPR_EXPORTS;FREERDP_EXPORTS;_DEBUG;WITH_OPENSSL;HAVE_CONFIG_H;EXT_PATH=\"C:/Program Files (x86)/FreeRDP/lib/freerdp/extensions\";CMAKE_BUILD_TYPE=Release;CMAKE_INTDIR=\"Debug\";freerdp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp;$(SolutionDir)\Rdp\include;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp;$(SolutionDir)\Rdp\include;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;$(SolutionDir)OpenSSL\lib\VC\ssleay32MD.lib;$(SolutionDir)OpenSSL\lib\VC\libeay32MD.lib;$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\winpr.lib;ntdsapi.lib;crypt32.lib;Dbghelp.lib;rpcrt4.lib;credui.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\freerdp.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalDependencies>ssleay32MD.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)OpenSSL\lib\VC</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp\src;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINVER=0x0501;WIN32_WINNT=0x0501;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;WITH_OPENSSL;HAVE_CONFIG_H;EXT_PATH="C:/Program Files (x86)/FreeRDP/lib/freerdp/extensions";CMAKE_BUILD_TYPE=Release;CMAKE_INTDIR="Release";freerdp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINVER=0x0501;WIN32_WINNT=0x0501;WINPR_EXPORTS;FREERDP_EXPORTS;NDEBUG;WITH_OPENSSL;HAVE_CONFIG_H;EXT_PATH=\"C:/Program Files (x86)/FreeRDP/lib/freerdp/extensions\";CMAKE_BUILD_TYPE=Release;CMAKE_INTDIR=\"Release\";freerdp_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp;$(SolutionDir)\Rdp\include;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp;$(SolutionDir)\Rdp\include;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;ws2_32.lib;$(SolutionDir)OpenSSL\lib\VC\ssleay32MD.lib;$(SolutionDir)OpenSSL\lib\VC\libeay32MD.lib;$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\winpr.lib;ntdsapi.lib;crypt32.lib;Dbghelp.lib;rpcrt4.lib;credui.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\graphics.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\gdi.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\locale\liblocale.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\bulk.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\activation.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gcc.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\mcs.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\nla.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\nego.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\info.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\input.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\license.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\errinfo.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\security.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\orders.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\client.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\server.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\capabilities.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\certificate.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\connection.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\redirection.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\autodetect.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\heartbeat.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\multitransport.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\timezone.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\rdp.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\tcp.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\tpdu.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\tpkt.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\fastpath.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\surface.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\transport.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\update.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\message.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\channels.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\window.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\listener.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\peer.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\tsg.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rdg.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rpc.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rpc_bind.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rpc_client.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rpc_fault.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rts.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rts_signature.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\ntlm.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\http.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\ncacn_http.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_bitstream.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_constants.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_decode.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_differential.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_dwt.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_encode.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_quantization.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_rlgr.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_types.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\nsc_encode.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\nsc_types.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_sse2.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\nsc_sse2.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_internal.h" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\utils\passphrase.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\utils\pcap.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\utils\profiler.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\utils\ringbuffer.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\utils\signal.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\utils\stopwatch.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\common\addin.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\common\settings.c">
+      <ObjectFileName>$(IntDir)/common/settings.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\common\assistance.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\8bpp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\16bpp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\32bpp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\bitmap.c">
+      <ObjectFileName>$(IntDir)/gdi/bitmap.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\brush.c">
+      <ObjectFileName>$(IntDir)/gdi/brush.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\clipping.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\dc.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\drawing.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\line.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\palette.c">
+      <ObjectFileName>$(IntDir)/gdi/palette.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\pen.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\region.c">
+      <ObjectFileName>$(IntDir)/gdi/region.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\shape.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\graphics.c">
+      <ObjectFileName>$(IntDir)/gdi/graphics.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\gfx.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\gdi\gdi.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\cache\brush.c">
+      <ObjectFileName>$(IntDir)/cache/brush.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\cache\pointer.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\cache\bitmap.c">
+      <ObjectFileName>$(IntDir)/cache/bitmap.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\cache\nine_grid.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\cache\offscreen.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\cache\palette.c">
+      <ObjectFileName>$(IntDir)/cache/palette.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\cache\glyph.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\cache\cache.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\crypto\er.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\crypto\der.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\crypto\ber.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\crypto\per.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\crypto\base64.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\crypto\certificate.c">
+      <ObjectFileName>$(IntDir)/crypto/certificate.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\crypto\crypto.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\crypto\tls.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\locale\keyboard_layout.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\locale\keyboard.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\locale\locale.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\locale\timezone.c">
+      <ObjectFileName>$(IntDir)/locale/timezone.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\bulk.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\activation.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gcc.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\mcs.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\nla.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\nego.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\info.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\input.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\license.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\errinfo.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\errbase.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\errconnect.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\security.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\settings.c">
+      <ObjectFileName>$(IntDir)/core/settings.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\orders.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\freerdp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\graphics.c">
+      <ObjectFileName>$(IntDir)/core/graphics.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\client.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\server.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\codecs.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\metrics.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\capabilities.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\certificate.c">
+      <ObjectFileName>$(IntDir)/core/certificate.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\connection.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\redirection.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\autodetect.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\heartbeat.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\multitransport.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\timezone.c">
+      <ObjectFileName>$(IntDir)/core/timezone.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\rdp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\tcp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\tpdu.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\tpkt.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\fastpath.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\surface.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\transport.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\update.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\message.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\channels.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\window.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\listener.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\peer.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\tsg.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rdg.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rpc.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rpc_bind.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rpc_client.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rpc_fault.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rts.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\rts_signature.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\ntlm.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\http.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\core\gateway\ncacn_http.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\dsp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\color.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\audio.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\planar.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\bitmap.c">
+      <ObjectFileName>$(IntDir)/codec/bitmap.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\interleaved.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\progressive.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_decode.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_differential.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_dwt.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_encode.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_quantization.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_rlgr.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\region.c">
+      <ObjectFileName>$(IntDir)/codec/region.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\nsc.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\nsc_encode.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\ncrush.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\xcrush.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\mppc.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\zgfx.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\clear.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\jpeg.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\h264.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\rfx_sse2.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\codec\nsc_sse2.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_16to32bpp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_add.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_andor.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_alphaComp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_colors.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_copy.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_set.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_shift.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_sign.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_YUV.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_YCoCg.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\primitives.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_16to32bpp_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_add_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_andor_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_alphaComp_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_colors_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_set_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_shift_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_sign_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_YUV_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\libfreerdp\primitives\prim_YCoCg_opt.c">
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <ClInclude Include="..\src\channels\client\rdpSourceMode.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

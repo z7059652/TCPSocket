@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="private">
+      <UniqueIdentifier>{886fa4b9-00d8-4ad9-8e55-0bda9e02c91d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="private\common\AsyncBase.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\AsyncSocketWriter.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\AsyncWriter.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\AutoReader.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\AutoSocketReader.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\windows\Dump.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\ensure_utility.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\exception.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\imagebuffer.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\Logger.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\windows\monitor.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\windows\network_change.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\windows\network_utility.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\ReadableSource.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\Socket.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\SocketTcp.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\SocketTcpServer.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\SocketUdp.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\system_clock.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\timebased_worker.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\windows\trace_console.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\wait_timer.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\wstr2str.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\thread.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\guid.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\MemReader.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\MemWriter.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\error_handling_utility.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\ImageProcess.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\windows\UacDesktopGuard.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\windows\MouseLLHook.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="private\common\TcpListener.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\any.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AsyncBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AsyncSocketWriter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AsyncWriter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\audiodefs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoReader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AutoSocketReader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\buffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ComSmartPtr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cursordefs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\DataBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Dump.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ensure_utility.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\error_handling_utility.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\exception.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\guid.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hiddefs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imagebuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\imagedefs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImageProcess.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\interface.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Logger.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemReader.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MemWriter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\monitor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\MouseLLHook.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network_change.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\network_utility.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\networkdefs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\noncopyable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ReadableSource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rectdefs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ScopeGuard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SignalConnection.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SmartHandle.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Socket.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SocketTcp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SocketTcpServer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SocketUdp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\string_utility.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\system_clock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\target_os.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TcpListener.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\thread.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\timebased_worker.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\trace_console.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Trimmean.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\UacDesktopGuard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wait_timer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\waitable_event.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WaitingBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WaitingPipe.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WaitingQueue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\WritableSource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wstr2str.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Resolution.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

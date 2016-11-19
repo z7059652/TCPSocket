@@ -1,0 +1,386 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freerdp", "Rdp\proj\freerdp.vcxproj", "{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166} = {21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freerdp-client", "Rdp\proj\freerdp-client.vcxproj", "{A995C739-0852-361A-A3B7-5D1EFF3BE873}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE} = {E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}
+		{061A0E64-A803-3743-827B-BEE2330F814E} = {061A0E64-A803-3743-827B-BEE2330F814E}
+		{E5FE090A-0F69-3776-8411-694649789445} = {E5FE090A-0F69-3776-8411-694649789445}
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22} = {F474A9C8-66B6-372D-BD22-9605D37D3E22}
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166} = {21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rdpgfx-client", "Rdp\proj\rdpgfx-client.vcxproj", "{061A0E64-A803-3743-827B-BEE2330F814E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE} = {E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166} = {21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rdpsnd-client", "Rdp\proj\rdpsnd-client.vcxproj", "{E5FE090A-0F69-3776-8411-694649789445}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE} = {E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166} = {21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rdpsnd-client-winmm", "Rdp\proj\rdpsnd-client-winmm.vcxproj", "{F474A9C8-66B6-372D-BD22-9605D37D3E22}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE} = {E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166} = {21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wfreerdp", "Rdp\proj\wfreerdp.vcxproj", "{D93189F0-6941-3DB5-9B39-7E61DB533C28}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE} = {E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873} = {A995C739-0852-361A-A3B7-5D1EFF3BE873}
+		{061A0E64-A803-3743-827B-BEE2330F814E} = {061A0E64-A803-3743-827B-BEE2330F814E}
+		{E5FE090A-0F69-3776-8411-694649789445} = {E5FE090A-0F69-3776-8411-694649789445}
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22} = {F474A9C8-66B6-372D-BD22-9605D37D3E22}
+		{EFA0014A-39CA-3B93-A364-C5B5BEE7219C} = {EFA0014A-39CA-3B93-A364-C5B5BEE7219C}
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166} = {21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wfreerdp-client", "Rdp\proj\wfreerdp-client.vcxproj", "{EFA0014A-39CA-3B93-A364-C5B5BEE7219C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE} = {E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873} = {A995C739-0852-361A-A3B7-5D1EFF3BE873}
+		{061A0E64-A803-3743-827B-BEE2330F814E} = {061A0E64-A803-3743-827B-BEE2330F814E}
+		{E5FE090A-0F69-3776-8411-694649789445} = {E5FE090A-0F69-3776-8411-694649789445}
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22} = {F474A9C8-66B6-372D-BD22-9605D37D3E22}
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166} = {21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "winpr", "Rdp\proj\winpr.vcxproj", "{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "drdynvc-client", "Rdp\proj\drdynvc-client.vcxproj", "{7E4B37AD-3E90-3700-AC0C-52C967DB8E85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "channels", "channels", "{F4806DEE-323F-49E0-BCE3-6072B1C23A56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "rdp", "rdp", "{5F898631-2180-45A9-BE1A-3BA34CF1175A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "projector", "projector\projector.vcxproj", "{379AA55D-7720-4960-8ADE-5AF38F4F9772}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "projector", "projector", "{EE549D15-9945-47D2-A981-E9F3DB9EA2B0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "redirector", "redirector", "{53204771-9584-47F5-95B1-F7F24FA50B62}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "redirector-client", "redirector-client\redirector-client.vcxproj", "{58C39EF4-21A0-448F-9C0C-9E94F8F1844E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C629D6C1-2AAA-4E94-90F3-CF6C44D11A34}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Utility", "common\utility\Utility.vcxproj", "{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rtsp", "common\rtsp\rtsp.vcxproj", "{E03F4AD1-AADB-4FFA-9BB6-298F4DFAA471}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "media", "common\media\media.vcxproj", "{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiragfx-client", "Rdp\proj\tiragfx-client.vcxproj", "{4FE30679-61EA-41F1-84B4-86A86C6F547F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tirasnd-client", "Rdp\proj\tirasnd-client.vcxproj", "{94E0975C-852F-422F-8286-C9FEE627E69E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rdpei-client", "Rdp\proj\rdpei-client.vcxproj", "{C8DDD47C-96BB-4EA5-89B2-D4123866BD58}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "rdpdr-client", "Rdp\proj\rdpdr-client.vcxproj", "{EA805089-5FE0-4852-9053-15CD333F2AAB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tiradr-client", "Rdp\proj\tiradr-client.vcxproj", "{7D43E360-BA61-4758-9DFE-E55E9032BA3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}.Debug|Win32.Build.0 = Debug|Win32
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}.Debug|x64.ActiveCfg = Debug|Win32
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}.Release|Win32.ActiveCfg = Release|Win32
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}.Release|Win32.Build.0 = Release|Win32
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE}.Release|x64.ActiveCfg = Release|Win32
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873}.Debug|Win32.Build.0 = Debug|Win32
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873}.Debug|x64.ActiveCfg = Debug|Win32
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873}.Release|Win32.ActiveCfg = Release|Win32
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873}.Release|Win32.Build.0 = Release|Win32
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873}.Release|x64.ActiveCfg = Release|Win32
+		{061A0E64-A803-3743-827B-BEE2330F814E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{061A0E64-A803-3743-827B-BEE2330F814E}.Debug|Win32.Build.0 = Debug|Win32
+		{061A0E64-A803-3743-827B-BEE2330F814E}.Debug|x64.ActiveCfg = Debug|Win32
+		{061A0E64-A803-3743-827B-BEE2330F814E}.Release|Win32.ActiveCfg = Release|Win32
+		{061A0E64-A803-3743-827B-BEE2330F814E}.Release|Win32.Build.0 = Release|Win32
+		{061A0E64-A803-3743-827B-BEE2330F814E}.Release|x64.ActiveCfg = Release|Win32
+		{E5FE090A-0F69-3776-8411-694649789445}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E5FE090A-0F69-3776-8411-694649789445}.Debug|Win32.Build.0 = Debug|Win32
+		{E5FE090A-0F69-3776-8411-694649789445}.Debug|x64.ActiveCfg = Debug|Win32
+		{E5FE090A-0F69-3776-8411-694649789445}.Release|Win32.ActiveCfg = Release|Win32
+		{E5FE090A-0F69-3776-8411-694649789445}.Release|Win32.Build.0 = Release|Win32
+		{E5FE090A-0F69-3776-8411-694649789445}.Release|x64.ActiveCfg = Release|Win32
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22}.Debug|Win32.Build.0 = Debug|Win32
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22}.Debug|x64.ActiveCfg = Debug|Win32
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22}.Release|Win32.ActiveCfg = Release|Win32
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22}.Release|Win32.Build.0 = Release|Win32
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22}.Release|x64.ActiveCfg = Release|Win32
+		{D93189F0-6941-3DB5-9B39-7E61DB533C28}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D93189F0-6941-3DB5-9B39-7E61DB533C28}.Debug|Win32.Build.0 = Debug|Win32
+		{D93189F0-6941-3DB5-9B39-7E61DB533C28}.Debug|x64.ActiveCfg = Debug|Win32
+		{D93189F0-6941-3DB5-9B39-7E61DB533C28}.Release|Win32.ActiveCfg = Release|Win32
+		{D93189F0-6941-3DB5-9B39-7E61DB533C28}.Release|Win32.Build.0 = Release|Win32
+		{D93189F0-6941-3DB5-9B39-7E61DB533C28}.Release|x64.ActiveCfg = Release|Win32
+		{EFA0014A-39CA-3B93-A364-C5B5BEE7219C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EFA0014A-39CA-3B93-A364-C5B5BEE7219C}.Debug|Win32.Build.0 = Debug|Win32
+		{EFA0014A-39CA-3B93-A364-C5B5BEE7219C}.Debug|x64.ActiveCfg = Debug|Win32
+		{EFA0014A-39CA-3B93-A364-C5B5BEE7219C}.Release|Win32.ActiveCfg = Release|Win32
+		{EFA0014A-39CA-3B93-A364-C5B5BEE7219C}.Release|Win32.Build.0 = Release|Win32
+		{EFA0014A-39CA-3B93-A364-C5B5BEE7219C}.Release|x64.ActiveCfg = Release|Win32
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}.Debug|Win32.ActiveCfg = Debug|Win32
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}.Debug|Win32.Build.0 = Debug|Win32
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}.Debug|x64.ActiveCfg = Debug|Win32
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}.Release|Win32.ActiveCfg = Release|Win32
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}.Release|Win32.Build.0 = Release|Win32
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}.Release|x64.ActiveCfg = Release|Win32
+		{7E4B37AD-3E90-3700-AC0C-52C967DB8E85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E4B37AD-3E90-3700-AC0C-52C967DB8E85}.Debug|Win32.Build.0 = Debug|Win32
+		{7E4B37AD-3E90-3700-AC0C-52C967DB8E85}.Debug|x64.ActiveCfg = Debug|Win32
+		{7E4B37AD-3E90-3700-AC0C-52C967DB8E85}.Release|Win32.ActiveCfg = Release|Win32
+		{7E4B37AD-3E90-3700-AC0C-52C967DB8E85}.Release|Win32.Build.0 = Release|Win32
+		{7E4B37AD-3E90-3700-AC0C-52C967DB8E85}.Release|x64.ActiveCfg = Release|Win32
+		{379AA55D-7720-4960-8ADE-5AF38F4F9772}.Debug|Win32.ActiveCfg = Debug|Win32
+		{379AA55D-7720-4960-8ADE-5AF38F4F9772}.Debug|Win32.Build.0 = Debug|Win32
+		{379AA55D-7720-4960-8ADE-5AF38F4F9772}.Debug|x64.ActiveCfg = Debug|Win32
+		{379AA55D-7720-4960-8ADE-5AF38F4F9772}.Release|Win32.ActiveCfg = Release|Win32
+		{379AA55D-7720-4960-8ADE-5AF38F4F9772}.Release|Win32.Build.0 = Release|Win32
+		{379AA55D-7720-4960-8ADE-5AF38F4F9772}.Release|x64.ActiveCfg = Release|Win32
+		{58C39EF4-21A0-448F-9C0C-9E94F8F1844E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{58C39EF4-21A0-448F-9C0C-9E94F8F1844E}.Debug|Win32.Build.0 = Debug|Win32
+		{58C39EF4-21A0-448F-9C0C-9E94F8F1844E}.Debug|x64.ActiveCfg = Debug|Win32
+		{58C39EF4-21A0-448F-9C0C-9E94F8F1844E}.Release|Win32.ActiveCfg = Release|Win32
+		{58C39EF4-21A0-448F-9C0C-9E94F8F1844E}.Release|Win32.Build.0 = Release|Win32
+		{58C39EF4-21A0-448F-9C0C-9E94F8F1844E}.Release|x64.ActiveCfg = Release|Win32
+		{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91}.Debug|Win32.Build.0 = Debug|Win32
+		{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91}.Debug|x64.ActiveCfg = Debug|Win32
+		{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91}.Release|Win32.ActiveCfg = Release|Win32
+		{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91}.Release|Win32.Build.0 = Release|Win32
+		{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91}.Release|x64.ActiveCfg = Release|Win32
+		{E03F4AD1-AADB-4FFA-9BB6-298F4DFAA471}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E03F4AD1-AADB-4FFA-9BB6-298F4DFAA471}.Debug|Win32.Build.0 = Debug|Win32
+		{E03F4AD1-AADB-4FFA-9BB6-298F4DFAA471}.Debug|x64.ActiveCfg = Debug|Win32
+		{E03F4AD1-AADB-4FFA-9BB6-298F4DFAA471}.Release|Win32.ActiveCfg = Release|Win32
+		{E03F4AD1-AADB-4FFA-9BB6-298F4DFAA471}.Release|Win32.Build.0 = Release|Win32
+		{E03F4AD1-AADB-4FFA-9BB6-298F4DFAA471}.Release|x64.ActiveCfg = Release|Win32
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}.Debug|Win32.Build.0 = Debug|Win32
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}.Debug|x64.ActiveCfg = Debug|x64
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}.Debug|x64.Build.0 = Debug|x64
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}.Release|Win32.ActiveCfg = Release|Win32
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}.Release|Win32.Build.0 = Release|Win32
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}.Release|x64.ActiveCfg = Release|x64
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB}.Release|x64.Build.0 = Release|x64
+		{4FE30679-61EA-41F1-84B4-86A86C6F547F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4FE30679-61EA-41F1-84B4-86A86C6F547F}.Debug|Win32.Build.0 = Debug|Win32
+		{4FE30679-61EA-41F1-84B4-86A86C6F547F}.Debug|x64.ActiveCfg = Debug|Win32
+		{4FE30679-61EA-41F1-84B4-86A86C6F547F}.Release|Win32.ActiveCfg = Release|Win32
+		{4FE30679-61EA-41F1-84B4-86A86C6F547F}.Release|Win32.Build.0 = Release|Win32
+		{4FE30679-61EA-41F1-84B4-86A86C6F547F}.Release|x64.ActiveCfg = Release|Win32
+		{94E0975C-852F-422F-8286-C9FEE627E69E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{94E0975C-852F-422F-8286-C9FEE627E69E}.Debug|Win32.Build.0 = Debug|Win32
+		{94E0975C-852F-422F-8286-C9FEE627E69E}.Debug|x64.ActiveCfg = Debug|Win32
+		{94E0975C-852F-422F-8286-C9FEE627E69E}.Release|Win32.ActiveCfg = Release|Win32
+		{94E0975C-852F-422F-8286-C9FEE627E69E}.Release|Win32.Build.0 = Release|Win32
+		{94E0975C-852F-422F-8286-C9FEE627E69E}.Release|x64.ActiveCfg = Release|Win32
+		{C8DDD47C-96BB-4EA5-89B2-D4123866BD58}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C8DDD47C-96BB-4EA5-89B2-D4123866BD58}.Debug|Win32.Build.0 = Debug|Win32
+		{C8DDD47C-96BB-4EA5-89B2-D4123866BD58}.Debug|x64.ActiveCfg = Debug|Win32
+		{C8DDD47C-96BB-4EA5-89B2-D4123866BD58}.Release|Win32.ActiveCfg = Release|Win32
+		{C8DDD47C-96BB-4EA5-89B2-D4123866BD58}.Release|Win32.Build.0 = Release|Win32
+		{C8DDD47C-96BB-4EA5-89B2-D4123866BD58}.Release|x64.ActiveCfg = Release|Win32
+		{EA805089-5FE0-4852-9053-15CD333F2AAB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA805089-5FE0-4852-9053-15CD333F2AAB}.Debug|Win32.Build.0 = Debug|Win32
+		{EA805089-5FE0-4852-9053-15CD333F2AAB}.Debug|x64.ActiveCfg = Debug|Win32
+		{EA805089-5FE0-4852-9053-15CD333F2AAB}.Release|Win32.ActiveCfg = Release|Win32
+		{EA805089-5FE0-4852-9053-15CD333F2AAB}.Release|Win32.Build.0 = Release|Win32
+		{EA805089-5FE0-4852-9053-15CD333F2AAB}.Release|x64.ActiveCfg = Release|Win32
+		{7D43E360-BA61-4758-9DFE-E55E9032BA3D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D43E360-BA61-4758-9DFE-E55E9032BA3D}.Debug|Win32.Build.0 = Debug|Win32
+		{7D43E360-BA61-4758-9DFE-E55E9032BA3D}.Debug|x64.ActiveCfg = Debug|Win32
+		{7D43E360-BA61-4758-9DFE-E55E9032BA3D}.Release|Win32.ActiveCfg = Release|Win32
+		{7D43E360-BA61-4758-9DFE-E55E9032BA3D}.Release|Win32.Build.0 = Release|Win32
+		{7D43E360-BA61-4758-9DFE-E55E9032BA3D}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E9BCDA2C-C202-320E-AE03-FC9BB318C2EE} = {5F898631-2180-45A9-BE1A-3BA34CF1175A}
+		{A995C739-0852-361A-A3B7-5D1EFF3BE873} = {5F898631-2180-45A9-BE1A-3BA34CF1175A}
+		{061A0E64-A803-3743-827B-BEE2330F814E} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+		{E5FE090A-0F69-3776-8411-694649789445} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+		{F474A9C8-66B6-372D-BD22-9605D37D3E22} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+		{D93189F0-6941-3DB5-9B39-7E61DB533C28} = {5F898631-2180-45A9-BE1A-3BA34CF1175A}
+		{EFA0014A-39CA-3B93-A364-C5B5BEE7219C} = {5F898631-2180-45A9-BE1A-3BA34CF1175A}
+		{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166} = {5F898631-2180-45A9-BE1A-3BA34CF1175A}
+		{7E4B37AD-3E90-3700-AC0C-52C967DB8E85} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+		{F4806DEE-323F-49E0-BCE3-6072B1C23A56} = {5F898631-2180-45A9-BE1A-3BA34CF1175A}
+		{379AA55D-7720-4960-8ADE-5AF38F4F9772} = {EE549D15-9945-47D2-A981-E9F3DB9EA2B0}
+		{58C39EF4-21A0-448F-9C0C-9E94F8F1844E} = {53204771-9584-47F5-95B1-F7F24FA50B62}
+		{1428E9EB-8858-41D8-A8B1-AA4D8E1D9F91} = {C629D6C1-2AAA-4E94-90F3-CF6C44D11A34}
+		{E03F4AD1-AADB-4FFA-9BB6-298F4DFAA471} = {C629D6C1-2AAA-4E94-90F3-CF6C44D11A34}
+		{4256B65F-03A6-45BA-BEC8-2A3D66D503DB} = {C629D6C1-2AAA-4E94-90F3-CF6C44D11A34}
+		{4FE30679-61EA-41F1-84B4-86A86C6F547F} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+		{94E0975C-852F-422F-8286-C9FEE627E69E} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+		{C8DDD47C-96BB-4EA5-89B2-D4123866BD58} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+		{EA805089-5FE0-4852-9053-15CD333F2AAB} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+		{7D43E360-BA61-4758-9DFE-E55E9032BA3D} = {F4806DEE-323F-49E0-BCE3-6072B1C23A56}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 20
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://vstfsng01:8080/tfs/research
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Rdp\\proj\\winpr.vcxproj
+		SccProjectTopLevelParentUniqueName1 = TiRARDP.sln
+		SccProjectName1 = Rdp/proj
+		SccLocalPath1 = Rdp\\proj
+		SccProjectUniqueName2 = Rdp\\proj\\drdynvc-client.vcxproj
+		SccProjectTopLevelParentUniqueName2 = TiRARDP.sln
+		SccProjectName2 = Rdp/proj
+		SccLocalPath2 = Rdp\\proj
+		SccProjectUniqueName3 = Rdp\\proj\\freerdp.vcxproj
+		SccProjectTopLevelParentUniqueName3 = TiRARDP.sln
+		SccProjectName3 = Rdp/proj
+		SccLocalPath3 = Rdp\\proj
+		SccProjectUniqueName4 = Rdp\\proj\\rdpgfx-client.vcxproj
+		SccProjectTopLevelParentUniqueName4 = TiRARDP.sln
+		SccProjectName4 = Rdp/proj
+		SccLocalPath4 = Rdp\\proj
+		SccProjectUniqueName5 = Rdp\\proj\\rdpsnd-client.vcxproj
+		SccProjectTopLevelParentUniqueName5 = TiRARDP.sln
+		SccProjectName5 = Rdp/proj
+		SccLocalPath5 = Rdp\\proj
+		SccProjectUniqueName6 = Rdp\\proj\\rdpsnd-client-winmm.vcxproj
+		SccProjectTopLevelParentUniqueName6 = TiRARDP.sln
+		SccProjectName6 = Rdp/proj
+		SccLocalPath6 = Rdp\\proj
+		SccProjectUniqueName7 = Rdp\\proj\\freerdp-client.vcxproj
+		SccProjectTopLevelParentUniqueName7 = TiRARDP.sln
+		SccProjectName7 = Rdp/proj
+		SccLocalPath7 = Rdp\\proj
+		SccProjectUniqueName8 = Rdp\\proj\\wfreerdp-client.vcxproj
+		SccProjectTopLevelParentUniqueName8 = TiRARDP.sln
+		SccProjectName8 = Rdp/proj
+		SccLocalPath8 = Rdp\\proj
+		SccProjectUniqueName9 = Rdp\\proj\\wfreerdp.vcxproj
+		SccProjectTopLevelParentUniqueName9 = TiRARDP.sln
+		SccProjectName9 = Rdp/proj
+		SccLocalPath9 = Rdp\\proj
+		SccProjectUniqueName10 = common\\utility\\Utility.vcxproj
+		SccProjectTopLevelParentUniqueName10 = TiRARDP.sln
+		SccProjectName10 = common/utility
+		SccLocalPath10 = common\\utility
+		SccProjectUniqueName11 = common\\media\\media.vcxproj
+		SccProjectTopLevelParentUniqueName11 = TiRARDP.sln
+		SccProjectName11 = common/media
+		SccLocalPath11 = common\\media
+		SccProjectUniqueName12 = common\\rtsp\\rtsp.vcxproj
+		SccProjectTopLevelParentUniqueName12 = TiRARDP.sln
+		SccProjectName12 = common/rtsp
+		SccLocalPath12 = common\\rtsp
+		SccProjectUniqueName13 = projector\\projector.vcxproj
+		SccProjectTopLevelParentUniqueName13 = TiRARDP.sln
+		SccProjectName13 = projector
+		SccLocalPath13 = projector
+		SccProjectUniqueName14 = redirector-client\\redirector-client.vcxproj
+		SccProjectTopLevelParentUniqueName14 = TiRARDP.sln
+		SccProjectName14 = redirector-client
+		SccLocalPath14 = redirector-client
+		SccProjectUniqueName15 = Rdp\\proj\\tiragfx-client.vcxproj
+		SccProjectTopLevelParentUniqueName15 = TiRARDP.sln
+		SccProjectName15 = Rdp/proj
+		SccLocalPath15 = Rdp\\proj
+		SccProjectUniqueName16 = Rdp\\proj\\tirasnd-client.vcxproj
+		SccProjectTopLevelParentUniqueName16 = TiRARDP.sln
+		SccProjectName16 = Rdp/proj
+		SccLocalPath16 = Rdp\\proj
+		SccProjectUniqueName17 = Rdp\\proj\\rdpei-client.vcxproj
+		SccProjectTopLevelParentUniqueName17 = TiRARDP.sln
+		SccProjectName17 = Rdp/proj
+		SccLocalPath17 = Rdp\\proj
+		SccProjectUniqueName18 = Rdp\\proj\\rdpdr-client.vcxproj
+		SccProjectTopLevelParentUniqueName18 = TiRARDP.sln
+		SccProjectName18 = Rdp/proj
+		SccLocalPath18 = Rdp\\proj
+		SccProjectUniqueName19 = Rdp\\proj\\tiradr-client.vcxproj
+		SccProjectTopLevelParentUniqueName19 = TiRARDP.sln
+		SccProjectName19 = Rdp/proj
+		SccLocalPath19 = Rdp\\proj
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 16
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://vstfsng01:8080/tfs/research
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Rdp\\proj\\freerdp.vcxproj
+		SccProjectTopLevelParentUniqueName1 = TiRARDP.sln
+		SccProjectName1 = Rdp/proj
+		SccLocalPath1 = Rdp\\proj
+		SccProjectUniqueName2 = Rdp\\proj\\freerdp-client.vcxproj
+		SccProjectTopLevelParentUniqueName2 = TiRARDP.sln
+		SccProjectName2 = Rdp/proj
+		SccLocalPath2 = Rdp\\proj
+		SccProjectUniqueName3 = Rdp\\proj\\rdpgfx-client.vcxproj
+		SccProjectTopLevelParentUniqueName3 = TiRARDP.sln
+		SccProjectName3 = Rdp/proj
+		SccLocalPath3 = Rdp\\proj
+		SccProjectUniqueName4 = Rdp\\proj\\rdpsnd-client.vcxproj
+		SccProjectTopLevelParentUniqueName4 = TiRARDP.sln
+		SccProjectName4 = Rdp/proj
+		SccLocalPath4 = Rdp\\proj
+		SccProjectUniqueName5 = Rdp\\proj\\rdpsnd-client-winmm.vcxproj
+		SccProjectTopLevelParentUniqueName5 = TiRARDP.sln
+		SccProjectName5 = Rdp/proj
+		SccLocalPath5 = Rdp\\proj
+		SccProjectUniqueName6 = Rdp\\proj\\wfreerdp.vcxproj
+		SccProjectTopLevelParentUniqueName6 = TiRARDP.sln
+		SccProjectName6 = Rdp/proj
+		SccLocalPath6 = Rdp\\proj
+		SccProjectUniqueName7 = Rdp\\proj\\wfreerdp-client.vcxproj
+		SccProjectTopLevelParentUniqueName7 = TiRARDP.sln
+		SccProjectName7 = Rdp/proj
+		SccLocalPath7 = Rdp\\proj
+		SccProjectUniqueName8 = Rdp\\proj\\winpr.vcxproj
+		SccProjectTopLevelParentUniqueName8 = TiRARDP.sln
+		SccProjectName8 = Rdp/proj
+		SccLocalPath8 = Rdp\\proj
+		SccProjectUniqueName9 = Rdp\\proj\\drdynvc-client.vcxproj
+		SccProjectTopLevelParentUniqueName9 = TiRARDP.sln
+		SccProjectName9 = Rdp/proj
+		SccLocalPath9 = Rdp\\proj
+		SccProjectUniqueName10 = projector\\projector.vcxproj
+		SccProjectTopLevelParentUniqueName10 = TiRARDP.sln
+		SccProjectName10 = projector
+		SccLocalPath10 = projector
+		SccProjectUniqueName11 = redirector-client\\redirector-client.vcxproj
+		SccProjectTopLevelParentUniqueName11 = TiRARDP.sln
+		SccProjectName11 = redirector-client
+		SccLocalPath11 = redirector-client
+		SccProjectUniqueName12 = common\\utility\\Utility.vcxproj
+		SccProjectTopLevelParentUniqueName12 = TiRARDP.sln
+		SccProjectName12 = common/utility
+		SccLocalPath12 = common\\utility
+		SccProjectUniqueName13 = common\\rtsp\\rtsp.vcxproj
+		SccProjectTopLevelParentUniqueName13 = TiRARDP.sln
+		SccProjectName13 = common/rtsp
+		SccLocalPath13 = common\\rtsp
+		SccProjectUniqueName14 = common\\media\\media.vcxproj
+		SccProjectTopLevelParentUniqueName14 = TiRARDP.sln
+		SccProjectName14 = common/media
+		SccLocalPath14 = common\\media
+	EndGlobalSection
+EndGlobal

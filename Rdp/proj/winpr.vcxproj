@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{21FAD66E-4D24-3A0B-BAEC-07EC3DD7C166}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>winpr</ProjectName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\Output\obj\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">winpr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\Output\obj\$(ProjectName)\$(PlatformTarget)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">winpr</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp\src;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\lodepng;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\.;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINVER=0x0501;WIN32_WINNT=0x0501;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;_DEBUG;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINVER=0x0501;WIN32_WINNT=0x0501;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;_DEBUG;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp;$(SolutionDir)\Rdp\include;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\lodepng;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\.;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp;$(SolutionDir)\Rdp\include;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\lodepng;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\.;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)\Output\$(PlatformTarget)\$(Configuration)\winpr.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp\src;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\lodepng;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\.;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <CallingConvention>Cdecl</CallingConvention>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINVER=0x0501;WIN32_WINNT=0x0501;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;NDEBUG;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR="Release";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_X86_;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;WINVER=0x0501;WIN32_WINNT=0x0501;WINPR_EXPORTS;FREERDP_EXPORTS;WINPR_EXPORTS;NDEBUG;WITH_OPENSSL;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";winpr_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp;$(SolutionDir)\Rdp\include;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\lodepng;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\.;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>$(SolutionDir)\Rdp;$(SolutionDir)\Rdp\include;$(SolutionDir)\Rdp\src\include;$(SolutionDir)\Rdp\src\winpr\include;$(SolutionDir)\Rdp\winpr\include;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\lodepng;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio;$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\.;$(SolutionDir)OpenSSL\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
+      <SubSystem>Console</SubSystem>
+      <Version>
+      </Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\synch.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pipe\pipe.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crypto\crypto.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\registry\registry_reg.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\io\io.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\memory\memory.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\lodepng\lodepng.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\strio.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\trio.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\triodef.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\trionan.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\triop.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\triostr.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\wlog.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\Layout.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\Message.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\TextMessage.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\DataMessage.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\ImageMessage.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\PacketMessage.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\Appender.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\FileAppender.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\BinaryAppender.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\CallbackAppender.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\ConsoleAppender.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\pool.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\handle\handle.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\handle\nonehandle.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\thread\thread.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\NTLM\ntlm_av_pairs.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\NTLM\ntlm_compute.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\NTLM\ntlm_message.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\NTLM\ntlm.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\Negotiate\negotiate.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\Schannel\schannel_openssl.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\Schannel\schannel.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\sspi_winpr.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\sspi.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crt\utf.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_array.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_context.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_correlation.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_pointer.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_private.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_simple.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_string.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_structure.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_union.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\wtsapi\wtsapi.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\wtsapi\wtsapi_win32.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\wnd\wnd.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\smartcard\smartcard.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\smartcard\smartcard_pcsc.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\smartcard\smartcard_inspect.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\smartcard\smartcard_winscard.h" />
+    <ClInclude Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\clipboard\clipboard.h" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\address.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\barrier.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\condition.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\critical.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\event.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\init.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\mutex.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\semaphore.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\sleep.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\srw.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\timer.c">
+      <ObjectFileName>$(IntDir)/synch/timer.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\synch\wait.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\locale\locale.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\library\library.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\file\generic.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\file\namedPipeClient.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\file\pattern.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\file\file.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pipe\pipe.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\interlocked\interlocked.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\security\security.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\environment\environment.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crypto\hash.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crypto\rand.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crypto\cipher.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crypto\cert.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crypto\crypto.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\registry\registry_reg.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\registry\registry.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\credentials\credentials.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\path\path.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\path\shell.c">
+      <ObjectFileName>$(IntDir)/path/shell.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\io\device.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\io\io.c">
+      <ObjectFileName>$(IntDir)/io/io.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\memory\memory.c">
+      <ObjectFileName>$(IntDir)/memory/memory.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\input\virtualkey.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\input\scancode.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\input\keycode.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\shell\shell.c">
+      <ObjectFileName>$(IntDir)/shell/shell.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\heap\heap.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\ini.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\sam.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\ntlm.c">
+      <ObjectFileName>$(IntDir)/utils/ntlm.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\image.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\print.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\stream.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\debug.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\winpr.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\cmdline.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\ssl.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\Queue.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\Stack.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\PubSub.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\BipBuffer.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\BitStream.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\Reference.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\ArrayList.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\Dictionary.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\LinkedList.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\HashTable.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\ListDictionary.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\KeyValuePair.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\CountdownEvent.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\BufferPool.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\ObjectPool.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\StreamPool.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\MessageQueue.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\collections\MessagePipe.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\lodepng\lodepng.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\trio.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\trionan.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\trio\triostr.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\wlog.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\Layout.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\Message.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\TextMessage.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\DataMessage.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\ImageMessage.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\PacketMessage.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\Appender.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\FileAppender.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\BinaryAppender.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\CallbackAppender.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\utils\wlog\ConsoleAppender.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\error\error.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\com\com.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\timezone\timezone.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sysinfo\sysinfo.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\synch.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\work.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\timer.c">
+      <ObjectFileName>$(IntDir)/pool/timer.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\io.c">
+      <ObjectFileName>$(IntDir)/pool/io.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\cleanup_group.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\pool.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\callback_environment.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\callback.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\pool\callback_cleanup.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\handle\handle.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\handle\nonehandle.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\thread\argv.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\thread\process.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\thread\processor.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\thread\thread.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\thread\tls.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\winsock\winsock.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\NTLM\ntlm_av_pairs.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\NTLM\ntlm_compute.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\NTLM\ntlm_message.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\NTLM\ntlm.c">
+      <ObjectFileName>$(IntDir)/sspi/NTLM/ntlm.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\Negotiate\negotiate.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\Schannel\schannel_openssl.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\Schannel\schannel.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\CredSSP\credssp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\sspi_winpr.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\sspi_export.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspi\sspi.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\winhttp\winhttp.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\asn1\asn1.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\sspicli\sspicli.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crt\alignment.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crt\conversion.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crt\buffer.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crt\memory.c">
+      <ObjectFileName>$(IntDir)/crt/memory.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crt\string.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crt\unicode.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\crt\utf.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\bcrypt\bcrypt.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\rpc.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_array.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_context.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_correlation.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_pointer.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_private.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_simple.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_string.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_structure.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\ndr_union.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\rpc\midl.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\credui\credui.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\wtsapi\wtsapi.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\wtsapi\wtsapi_win32.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\dsparse\dsparse.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\wnd\wnd.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\smartcard\smartcard.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\smartcard\smartcard_pcsc.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\smartcard\smartcard_inspect.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\smartcard\smartcard_winscard.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\nt\nt.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\clipboard\synthetic.c" />
+    <ClCompile Include="$(SolutionDir)\Rdp\src\winpr\libwinpr\clipboard\clipboard.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\winpr\libwinpr\winpr.vcxproj.filters" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="MediaPipeline">
+      <UniqueIdentifier>{6e62ad6d-d9fb-497a-ac51-518f16fc4411}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Session">
+      <UniqueIdentifier>{46cd05ae-d26c-46ae-a694-0e73a7d8eba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HIDRedirector">
+      <UniqueIdentifier>{51be1d40-5f95-464c-a5a1-8836c9789c8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D2DRender.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="Session.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionManager.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TcpChannel.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RdpStreamingParser.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="HIDRedirector.cpp">
+      <Filter>HIDRedirector</Filter>
+    </ClCompile>
+    <ClCompile Include="RedirectChannelFactory.cpp">
+      <Filter>Session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Rdp\src\client\common\tables.c" />
+    <ClCompile Include="IRedirector.cpp">
+      <Filter>HIDRedirector</Filter>
+    </ClCompile>
+    <ClCompile Include="RedirectPipe.cpp">
+      <Filter>HIDRedirector</Filter>
+    </ClCompile>
+    <ClCompile Include="RdpDRSource.h.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RdpScreenSource.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="IRdpSource.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioSource.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioPlayback.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceRedirecr.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="RDPProjectorPipeline.cpp">
+      <Filter>MediaPipeline</Filter>
+    </ClCompile>
+    <ClCompile Include="TouchAndPen.cpp">
+      <Filter>HIDRedirector</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D2DRender.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionManager.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="Session.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="IChannel.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpChannel.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RdpStreamingDef.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RdpStreamingParser.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="HIDRedirector.h">
+      <Filter>HIDRedirector</Filter>
+    </ClInclude>
+    <ClInclude Include="RedirectChannelFactory.h">
+      <Filter>Session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Rdp\src\channels\client\tables.h" />
+    <ClInclude Include="IRedirector.h">
+      <Filter>HIDRedirector</Filter>
+    </ClInclude>
+    <ClInclude Include="RedirectPipe.h">
+      <Filter>HIDRedirector</Filter>
+    </ClInclude>
+    <ClInclude Include="RdpDRSource.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RdpScreenSource.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="IRdpSource.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioSource.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioPlayback.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceRedirecr.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="RDPProjectorPipeline.h">
+      <Filter>MediaPipeline</Filter>
+    </ClInclude>
+    <ClInclude Include="TouchAndPen.h">
+      <Filter>HIDRedirector</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
